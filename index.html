@@ -1,79 +1,263 @@
-<!DOCTYPE html>
 <html>
+<head>
+<title>Wayang DE</title>
+<link rel="stylesheet" href="./css/menu.css" />
+<link rel="stylesheet" href="./css/desktop.css" />
+<link rel="stylesheet" href="./css/libre.css" type="text/css" />
+<link rel="shortcut icon" href="silver.png"/>
+<!-------weather------>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Tour : " />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<script type="text/javascript" src="./js/jq.js"></script>
+<script type="text/javascript" src="./js/desktop.js"></script>
+<script type="text/javascript" src="./js/libresystem.js"></script>
+<script type="text/javascript" src="/usr/share/javascript/jquery/jquery.min.js"></script>
+</head>
 
-    <title>Tour</title>
-  </head>
+<body >
+<div id="base">
+<div id="launcher"></div>
+</div>
+<div id="top" class="dropshadow">
+	<div id="top-right">
+		<div id="control-buttons">
+					<div id="close"></div>
+					<div id="min"></div>
+					<div id="max"></div>
+				</div>
+				<div id="dash-control-buttons">
+					<div class="close"></div>
+					<div class="min"></div>
+					<div class="max"></div>
+				</div>
+				<div id="title"></div>
+			</div>
+			<div id="top-right">
+				<div id="message"><img src="./img/nomessage.jpg" class="message-logo" alt="" />
+					<ul class="drop-down">
+						<li class="disabled"><img src="./img/available.jpg" alt=""/> Available
+						</li>
+						<li class="disabled"><img src="./img/away.jpg" alt=""/> Away
+						</li>
+						<li class="disabled"><img src="./img/busy.jpg" alt=""/> Busy
+						</li>
+						<li class="disabled"><img src="./img/invisible.jpg" alt=""/> Invisible
+						</li>
+						<li class="disabled"><img src="./img/offline.jpg" alt=""/> Offline
+						</li>
+						<li class="divider"></li>
+						<li class="disabled"><img src="./img/chat.png" alt=""/> Chat
+						</li>
+						<li class="divider"></li>
+						<li class="disabled"><img src="./img/broadcast.png" alt=""/> Set Up Broadcast Account…
+						</li>
+						<li class="divider"></li>
+						<li class="disabled"><img src="./img/mail.png" alt=""/> Set Up Mail…
+						</li>
+						<li class="divider"></li>
+						<li class="disabled"><img src="./img/uone.png" alt=""/> Ubuntu One
+						</li>
+						<li class="divider"></li>
+						<li class="disabled">
+							Clear
+						</li>
+					</ul>
+				</div>
+				<div id="bluetooth"><img src="./img/bluetooth.png" alt=""/>
+					<ul class="drop-down">
+						<li class="disabled bluetooth">
+							Bluetooth On
+						</li>
+						<li>
+							Turn Off Bluetooth
+						</li>
+						<li class="divider"></li>
+						<li class="disabled BtOn">
+							Visible
+						</li>
+						<li class="divider BtOn"></li>
+						<li class="disabled BtOn">
+							Send files to device…
+						</li>
+						<li class="disabled BtOn">
+							Browse files on device…
+						</li>
+						<li class="divider"></li>
+						<li class="disabled BtOn">
+							Setup new device…
+						</li>
+						<li class="divider BtOn"></li>
+						<li class="disabled">
+							Preferences
+						</li>
+					</ul>
+				</div>
+				<div id="connection"><img src="./img/connection.png" alt=""/>
+					<ul class="drop-down">
+						<li class="disabled">
+							Auto eth0
+						</li>
+						<li class="disabled">
+							Disconnect
+						</li>
+						<li class="divider"></li>
+						<li class="disabled"><img src="../img/top/wireless-icon.png" alt=""/> My Wireless Connection</li>
+						<li class="disabled">Disconnect</li>
+						<li class="divider"></li>-->
+						<li class="disabled">
+							Connection Information
+						</li>
+						<li class="disabled">
+							Edit Connections…
+						</li>
+					</ul>
+				</div>
+				<div id="speakers"><img src="./img/speakers3.png" class="speakers-logo"  alt=""/>
+					<ul class="drop-down">
+						<li>
+							Mute
+						</li>
+						<li class="system-volume">
+							<div class="large-icon"></div><div class="small-icon"></div><div class="slider"></div><div class="slider-active"></div>
+						</li>
+						<li class="divider"></li>
+						<li class="disabled"><img src="./img/rhythmbox.png" alt=""/> Rhythmbox
+						</li>
+						<li class="banshee">
+							<div class="banshee-rewind"></div><div class="banshee-forward"></div><div class="banshee-play"></div>
+						</li>
+						<li class="divider"></li>
+						<li class="disabled">
+							Sound Settings…
+						</li>
+					</ul>
+				</div>
+				<div id="time">
+					<p><b>18:39</b></p>
+					<ul class="drop-down">
+						<li class="system-calendar"></li>
+						<li class="divider"></li>
+						<li class="disabled">
+							Time &amp; Date Settings…
+						</li>
+					</ul>
+				</div>
+				<div id="power"><img src="./img/power.png"  alt=""/>
+					<ul class="drop-down">
+						<li class="disabled">
+							System Settings…
+						</li>
+						<li class="disabled">
+							Displays…
+						</li>
+						<li class="disabled">
+							Startup Applications…
+						</li>
+						<li class="disabled">
+							Software Up to Date
+						</li>
+						<li class="divider"></li>
+						<li class="disabled">
+							Attached Devices
+						</li>
+						<li class="disabled">
+							Printers
+						</li>
+						<li class="divider"></li>
+						<li class="disabled">
+							Lock Screen
+						</li>
+						<li class="disabled">
+							Log Out…
+						</li>
+						<li class="disabled">
+							Suspend
+						</li>
+						<li class="disabled">
+							Hibernate
+						</li>
+						<li>
+							Shut Down…
+						</li>
+					</ul>
+				</div>
+			</div>
+</div>
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/linux-ramayana/tour">View on GitHub</a>
+		<div id="libreoffice-impress-window" class="impress window">
+			<div class="control">
+				<div class="close"></div>
+				<div class="window-title">
+					Untitled 1 - LibreOffice Impress
+				</div>
+			</div>
+			<div class="content">
+				<span>File</span>
+				<span>Edit</span>
+				<span>View</span>
+				<span>Insert</span>
+				<span>Format</span>
+				<span>Table</span>
+				<span>Tools</span>
+				<span>Window</span>
+				<span>Help</span>
+			</div>
+		</div>
+		
+		
+<div class="menuHolder"><div class="menuWindow">
+<ul class="p1">
+	<li class="s1"><a href=""><img src="./img/silver.png" width="24" height="24"></img></a>
+		<ul class="p2">
+			<li class="s2"><a href="#"><span><img src="./img/applications.png">Aksesoris</img></span></a>
+					<ul class="p3 a3">
+					<li><a href=""><img src="./img/gedit.png">Gedit</img></a></li>
+					<li><a href="calculator.html"><img src="./img/calculator.png">Calculator</img></a></li>
+					<li><a href="#"><img src="./img/utilities-terminal.png">Terminal</img></a></li>
+				</ul>			
+			</li>
+			<li class="s2"><a href="#"><span><img src="./img/graphics.png">Grafik</img></span></a>
+				<ul class="p3 a3"><img src="./img/pacman.png" alt="" />
+					<li><a href="#"><img src="./img/inkscape.png">Inkscape</img></a></li>
+					<li><a href="#"><img src="./img/gimp.png">GIMP</img></a></li>
+					<li><a href="#"><img src="./img/evince.png">Evince</img></a></li>
+				</ul>
+			</li>
+			<li class="s2"><a href="#url"><span><img src="./img/games.png">Permainan</img></span></a>
+				<ul class="p3 a3">
+					<li><a href="pacman.html"><img src="./img/pacman.png" width="20" height="20">Pacman</img></a></li>
+					<li><a href="chess.html"><img src="./img/chess.png">Chess</img></a></li>
+					<li><a href="#"><img src="./img/pinball.png">Pinball</img></a></li>
+				</ul>
+			</li>
+			<li class="s2"><a href="#url"><span><img src="./img/internet.png">Internet</img></span></a>
+				<ul class="p3 a3">
+					<li><a href="#"><img src="./img/chromium.png">Chromium</img></a></li>
+					<li><a href="#"><img src="./img/pidgin.png">Pidgin</img></a></li>
+					<li><a href="#"><img src="./img/firefox.png">Firefox</img></a></li>
+				</ul>
+			</li>
+			<li class="s2"><a href="#url"><span><img src="./img/multimedia.png">Multimedia</img></span></a>
+				<ul class="p3 a3">
+					<li><a href="#"><img src="./img/vlc.png">VLC</img></a></li>
+					<li><a href="#"><img src="./img/pitivi.png">Pitivi</img></a></li>
+					<li><a href="#"><img src="./img/cheese.png">Cheese</img></a></li>
+				</ul>
+			</li>
+			<li class="s2 b6"><a href="#url"><span><img src="./img/office.png">Perkantoran</img></span></a>
+				<ul class="p3 a5">
+					<li><a href="#"><img src="./img/openoffice-math.png">OpenOffice Math</a></li>
+					<li><a href="#"><img src="./img/openoffice-base.png">OpenOffice Base</a></li>
+					<li><a href="#"><img src="./img/openoffice-impress.png">OpenOffice Impress</a></li>
+					<li><a href="#"><img src="./img/gnumeric.png">GnuMeric</img></a></li>
+					<li><a href="#"><img src="./img/abiword.png">Abiword</img></a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+</div></div>
 
-          <h1 id="project_title">Tour</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/linux-ramayana/tour/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/linux-ramayana/tour/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Tour maintained by <a href="https://github.com/linux-ramayana">linux-ramayana</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>
